@@ -1,23 +1,8 @@
 import java.util.Scanner;
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
-
-        BankAccount lisaAcc = new BankAccount(1000, -1000, "Lisa");
-        BankAccount bobAcc = new BankAccount(1000, -1000, "Bob");
-        System.out.println(lisaAcc);
-        System.out.println(bobAcc);
-        lisaAcc.transfer(bobAcc, 500);
-        System.out.println(lisaAcc);
-        System.out.println(bobAcc);
-        lisaAcc.transfer(bobAcc, 1600);
-        System.out.println(lisaAcc);
-        System.out.println(bobAcc);
-
-        Rectangle r1 = new Rectangle(7,7);
+        Rectangle r1 = new Rectangle(7, 7);
         r1.draw();
 
         System.out.println("Enter width: ");
@@ -40,5 +25,12 @@ public class Main {
         System.out.println("Sum of perimeters: " + r2.calcPerimeter() + r3.calcPerimeter());
 
         System.out.println("Sum of areas: " + r2.calcArea() + r3.calcArea());
+
+        Circle circle1 = new Circle(5.0);
+        Circle circle2 = new Circle(3.5);
+
+        // חישוב והדפסת שטח המעגלים
+        System.out.println("The area of the first circle is: " + circle1.area());
+        System.out.println("The area of the second circle is: " + circle2.area());
     }
 }
